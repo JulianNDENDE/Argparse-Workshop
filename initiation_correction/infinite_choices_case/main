@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+from args import parse_args, Arguments
+
+
+def entrypoint() -> int:
+    args: Arguments = parse_args()
+    print(args)
+    return 0
+
+
+if __name__ == "__main__":
+    exit(entrypoint())
